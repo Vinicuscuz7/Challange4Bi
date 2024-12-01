@@ -1,0 +1,182 @@
+#logo{
+    width: 100px;
+
+
+}
+html{
+    background-color:rgb(39, 34, 34);
+    height: 700vh;
+}
+
+.navbar-custom{
+    color: rgba(131, 130, 130, 0.39);
+}
+.banner{
+    height: 60vh;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 100px;
+}
+
+.banner h1 span{
+    color: #FFAE81;
+}
+/* Reset básico */
+body, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 34, 34);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização da navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-menu li a {
+    color: rgba(255, 0, 0, 0.056);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    background-color: #5555555a;
+    border-radius: 5px;
+}
+
+/* Botão de menu para telas pequenas */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(51, 51, 51);
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+
+.banner {
+    height: 100vh; /* Ocupa 100% da altura do viewport */
+    width: 100%; /* Ocupa toda a largura */
+    background-image: url(pokemon-lucario-aesthetic-desktop-wallpaper-preview.jpg);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    background-size: cover; /* Mantém as proporções da imagem */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.banner span {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 70vh; /* Reduz a altura para 70% em dispositivos menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 50vh; /* Reduz ainda mais a altura para 50% em dispositivos muito pequenos */
+    }
+}
+
+/* Apresentação */
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: transparent; /* Remove fundo branco */
+    padding: 20px;
+}
+
+.presentation-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.presentation-text {
+    flex: 1;
+    color: #fff; /* Texto branco */
+}
+
+.presentation-text h2 {
+    margin-bottom: 20px;
+    color: #f6f6f6; /* Título com destaque */
+}
+
+.presentation-image img {
+    
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Garantir que margens desnecessárias não causem o fundo branco */
+html, body {
+    height: 100%;
+}
